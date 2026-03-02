@@ -12,11 +12,13 @@ source:
   - url: https://github.com/tomba/kmsxx/archive/${{ commit_hash }}.tar.gz
     sha256: 0e5116c5888f916997ac65e73dfe278952f44bd313ee2768a690f1f36199babd
 
+build:
+  number: 2
+
 outputs:
   - package:
       name: libkmsxx
     build:
-      number: 1
       skip:
         - win
         - osx
@@ -54,7 +56,6 @@ outputs:
   - package:
       name: pykms
     build:
-      number: 1
       skip:
         - win
         - osx
