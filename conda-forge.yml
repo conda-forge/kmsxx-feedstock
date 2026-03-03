@@ -1,3 +1,5 @@
+conda_build_tool: rattler-build
+conda_install_tool: pixi
 provider:
   linux_aarch64: default
 github:
@@ -5,4 +7,5 @@ github:
   tooling_branch_name: main
 conda_build:
   error_overlinking: true
+  pkg_format: "2"
 conda_forge_output_validation: true
